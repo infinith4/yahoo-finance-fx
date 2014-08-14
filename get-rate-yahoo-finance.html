@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+<!--
+function time(){
+    var date = new Date();
+    $("#CLOCK").text(date.toLocaleString());
+    $.ajax({
+        async:false,
+        url:"http://info.finance.yahoo.co.jp/fx/detail/?code=USDJPY=FX",
+        success:function(xhr){
+            $("#USDJPY #BID").text($("dd#USDJPY_detail_bid",xhr).text());
+            $("#USDJPY #ASK").text($("dd#USDJPY_detail_ask",xhr).text());
+            $("#USDJPY #CHANGE").text($("dd#USDJPY_detail_change",xhr).text());
+            $("#USDJPY #OPEN").text($("dd#USDJPY_detail_open",xhr).text());
+            $("#USDJPY #HIGH").text($("dd#USDJPY_detail_high",xhr).text());
+            $("#USDJPY #LOW").text($("dd#USDJPY_detail_low",xhr).text());
+        },
+        error:function(xhr,textStatus,errorThrown){
+            alert(textStatus+': '+errorThrown);
+        }
+    });
+}
+
+$(function(){
+    jQuery.support.cors=true;
+    setInterval(function(){  
+        time();
+    },60000);  
+});
+//-->
+</script>
+
+<div id="CLOCK"></div>
+<div id="USDJPY">
+BID=<span id="BID"></span> ASK=<span id="ASK"></span> CHANGE=<span id="CHANGE"></span>
+<br />
+OPEN=<span id="OPEN"></span> HIGH=<span id="HIGH"></span> LOW=<span id="LOW"></span>
+</div>
+
+</body>
+
+</html>

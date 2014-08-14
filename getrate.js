@@ -22,7 +22,7 @@ var is = new IntervalStream(1000);
 var dir = 'data';
 var chartbid = '_chart_bid';
 var chartask = '_chart_ask';
-var IDArray = ['EURJPY', 'AUDJPY', 'GBPJPY', 'NZDJPY', 'CADJPY', 'CHFJPY', 'ZARJPY', 'CNHJPY', 'EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'HKDJPY', 'EURGBP', 'EURAUD', 'USDCHF', 'EURCHF', 'GBPCHF', 'AUDCHF', 'CADCHF', 'USDHKD']
+var IDArray = ['USDJPY', 'EURJPY', 'AUDJPY', 'GBPJPY', 'NZDJPY', 'CADJPY', 'CHFJPY', 'ZARJPY', 'CNHJPY', 'EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'HKDJPY', 'EURGBP', 'EURAUD', 'USDCHF', 'EURCHF', 'GBPCHF', 'AUDCHF', 'CADCHF', 'USDHKD']
 for(var i=0; i<max_count; i++){
     var dt = new Date();
     var today = dt.toFormat("YYYYMMDD");
@@ -42,11 +42,11 @@ for(var i=0; i<max_count; i++){
 	    var data = []
 	    for(var j=0;j < IDArray.length; j++){
 		var item = [IDArray[j], $('#' + IDArray[j] + chartbid).text(), $('#' + IDArray[j] + chartask).text(), currentdate, '\n']
-		console.log(item.toString());
+		console.log("item:",item.toString());
 		//data.push(item);
 		//var stream = fs.createWriteStream("data" + today + ".csv");
 		fs.appendFile("data" + today + ".csv", item.toString() ,'utf8', function (err) {
-		    console.log(err);
+		    console.log("err:", err);
 		});
 		//fs.close(); 
 		

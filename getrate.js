@@ -10,7 +10,7 @@ var csv = require('csv');
 //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
 //console.log(formatted);
 var sleeptime = 5000; // 1 second: 1000
-var max_count = 2;
+var max_count = 1;
 var url = 'http://info.finance.yahoo.co.jp/fx/list/';
 var wgetcmd = 'wget ' + url + ' -T 6000 -t 5';
 

@@ -1,0 +1,494 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>レート一覧 - Y!ファイナンス</title>
+<meta name="description" content="FX取引に役立つ為替レートとFXチャートが22通貨ペア。ドル円やユーロ、ポンド、豪ドル、ニュージーランド（NZ）ドル、南アランドなど人気の通貨ペアを網羅。リアルタイムで確認したり、その日の高値安値を確認できます。">
+<meta name="keywords" content="FXチャート・レート一覧,FX,チャート,レート,米ドル,ユーロ,ランド">
+<meta property="og:site_name" content="Yahoo!ファイナンス">
+<meta property="og:title" content="レート一覧 - Y!ファイナンス">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://info.finance.yahoo.co.jp/fx/list/">
+<meta property="og:image" content="http://i.yimg.jp/images/finance/common/image/ogp.png">
+<meta property="og:description" content="FX取引に役立つ為替レートとFXチャートが22通貨ペア。ドル円やユーロ、ポンド、豪ドル、ニュージーランド（NZ）ドル、南アランドなど人気の通貨ペアを網羅。リアルタイムで確認したり、その日の高値安値を確認できます。">
+<meta property="og:locale" content="ja_JP">
+
+<link rel="stylesheet" href="http://i.yimg.jp/images/finance/common/css/master-finance3.css?date=2014082119" type="text/css" media="all">
+<link rel="stylesheet" href="http://i.yimg.jp/images/finance/fx/css/fx_common.css?date=2014082119" type="text/css" media="all">
+<!-- SpaceID=0 robot -->
+<script type="text/javascript" src="http://i.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://info.finance.yahoo.co.jp/fx/yj_fin_rate_update.js"></script>
+<script type="text/javascript" src="http://info.finance.yahoo.co.jp/fx/yj_fin_bbs_handler.js"></script>
+</head>
+<body class="yj950-2">
+
+<!--wrapper start-->
+<div id="wrapper">
+
+<!--header start-->
+<div id="header">
+<span class="yj-guid"><a name="pagetop" id="pagetop"></a><img src="http://i.yimg.jp/images/clear.gif" width="1" height="1" alt="このページの先頭です"></span>
+<span class="yj-skip"><a href="#contents-start"><img src="http://i.yimg.jp/images/clear.gif" alt="このページの本文へ" width="1" height="1" ></a></span>
+
+<!-- SpaceID=0 robot -->
+
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+</div><!--/#header end-->
+<!--/header end-->
+
+<hr class="separation">
+
+<!--contents start-->
+<div id="contents">
+<div id="contents-header">
+<!--================================ GLOBAL NAVIGATION ====================================-->
+<!--グローバルナビ-->
+<div id="globalNavWrapper"><div id="globalDate" class="clearFix">
+<em>
+<a href="http://rdsig.yahoo.co.jp/finance/stocks/g_navi/customize/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9wb3J0Zm9saW8vY29sb3IvPy5kb25lPWh0dHAlM0ElMkYlMkZpbmZvLmZpbmFuY2UueWFob28uY28uanAlMkZmeCUyRmxpc3QlMkY-">ディスプレイ</a> - <a href="http://rdsig.yahoo.co.jp/finance/stocks/g_navi/purchase_history/RV=1/RU=aHR0cHM6Ly9kZXRhaWxzLm9yZGVyLnlhaG9vLmNvLmpwL3B1cmNoYXNlX2hpc3Rvcnkv">購入履歴 </a>&nbsp;&nbsp;<span class="ymuiArrow1"><a href="http://rdsig.yahoo.co.jp/finance/stocks/g_navi/sitemap/RV=1/RU=aHR0cDovL2ZpbmFuY2UueWFob28uY28uanAvc2l0ZW1hcC8-">サイトマップ</a></span>
+</em>
+<p>現在の日時：<strong>8月 21日 19:11</strong> -- 日本の証券市場は終了しました。</p>
+</div>
+<div id="globalNav">
+<ul id="gnPri" class="selectGrKawase"><li id="gnPriTop"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/1/RV=1/RU=aHR0cDovL2ZpbmFuY2UueWFob28uY28uanAv">トップ</a></li><li id="gnPriKabu"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/2/RV=1/RU=aHR0cDovL3N0b2Nrcy5maW5hbmNlLnlhaG9vLmNvLmpwLw--">株式</a></li><li id="gnPriGrKawase"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC8-" class="new">FX・外国為替</a></li><li id="gnPriShintaku"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/4/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3d3dy5tb3JuaW5nc3Rhci5jby5qcC93ZWJhc3AveWFob28tZnVuZC9uaXNhL2luZGV4Lmh0bWw-/RS=^ADACadZnRkcchwO8fB3SdJOw6sRe6Q-" class="blank">NISA/投信</a></li><li id="gnPriKabuyoso"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/5/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9rYWJ1eW9zby8-">株価予想</a></li><li id="gnPriNews"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/6/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC8-">ニュース</a></li><li id="gnPriKinri"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/7/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9pbnRlcmVzdC8-">金利</a></li><li id="gnPriCompany"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/8/RV=1/RU=aHR0cDovL3Byb2ZpbGUueWFob28uY28uanAv">企業情報</a></li><li id="gnPriAccount"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/9/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2hpa2FrdS5taW5rYWJ1LmpwL2hpa2FrdXNlYy9pbmRleC5odG1s/RS=^ADA6IPKU6WMufYdQisN_nTpIzcq6fg-" class="blank">証券口座</a></li><li id="gnPriStore"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/10/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9zdG9yZS8-">ストア</a></li><li id="blankBox"><em class="blank">外部サイトへ</em></li>
+</ul><ul id="gnSec"><li class="on"><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/1/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9saXN0Lw--">FXチャート・レート</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/2/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9yYW5raW5nL2N1cnJlbmN5Lz9rZD0xJnRtPWQ-" class="new">為替ランキング</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/3/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9tYXJrZXRjYWxlbmRhci8-">経済指標</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/4/RV=1/RU=aHR0cDovL3RleHRyZWFtLnlhaG9vLmNvLmpwL2NhdGVnb3J5LzExNjAwMDA1Mzk-">外国為替掲示板</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/5/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9zdGFkaXVtLw--">ファイナンススタジアム</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/6/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL2Z4LmZpbmFuY2UueWFob28uemFpdHN1LWxhYnMuY29tLw--/RS=^ADA299yQdpTExIOuUV6kT9SJ4Kx5Ns-" class="blank">FX会社比較</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/7/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3IuY2EtbXByLmpwL3MvMTA0Lz9pNGE9NTE3MjE4/RS=^ADA.XJtjM7B40Y3tuiIYTC2AkVUuVk-">YJFX!</a></li><li><a href="http://rdsig.yahoo.co.jp/finance/g_navi/3/8/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC96YWkvYmFja251bWJlci8-">トレードバトル</a></li></ul></div></div>
+<hr id="hrGlobalNavigation">
+<!--/グローバルナビ-->
+<!-- 為替レート計算 -->
+<div id="financeSearch" class="exchange">
+
+<!-- SpaceID=0 robot -->
+
+<h1><p class="rate floatL">為替レート計算</p></h1>
+<form action="http://info.finance.yahoo.co.jp/fx/convert/" id=""> 
+
+<input id="exchange" type="text" name="a" value="1"/>
+
+<select class="currency" name="s">
+<option value="JPY" class="floatL">日本　円</option><option value="USD" selected>アメリカ ドル</option><option value="EUR">欧州　ユーロ</option><option value="BRL">ブラジル　レアル</option><option value="AUD">オーストラリア　ドル</option><option value="CNY">中国　元</option><option value="GBP">イギリス　ポンド</option><option value="KRW">韓国　ウォン</option><option value="NZD">ニュージーランド　ドル</option><option value="SGD">シンガポール　ドル</option><option value="THB">タイ　バーツ</option><option value="TWD">台湾　ドル</option><option value="ZAR">南アフリカ　ランド</option><option value="CAD">カナダ　ドル</option><option value="TRY">トルコ　リラ</option><option value="HKD">香港　ドル</option><option value="CHF">スイス　フラン</option><option value="MYR">マレーシア　リンギット</option><option value="MXN">メキシコ　ペソ</option><option value="PHP">フィリピン　ペソ</option><option value="INR">インド　ルピー</option><option value="IDR">インドネシア　ルピア</option><option value="RUB">ロシア　ルーブル</option><option value="SEK">スウェーデン　クローナ</option><option value="NOK">ノルウェー　クローネ</option><option value="DKK">デンマーク　クローネ</option><option value="AED">UAE　ディルハム</option><option value="CLP">チリ　ペソ</option><option value="VEF">ベネズエラ　ボリバル・フエルテ</option><option value="KWD">クウェート　ディナール</option><option value="SAR">サウジアラビア　リヤル</option><option value="RON">ルーマニア　レウ</option><option value="PYG">パラグアイ　グァラニ</option><option value="EGP">エジプト　ポンド</option><option value="COP">コロンビア　ペソ</option><option value="JOD">ヨルダン　ディナール</option><option value="ECS">エクアドル　スクレ</option><option value="PEN">ペルー　ソル</option><option value="LBP">レバノン　ポンド</option></select><span>&nbsp;を&nbsp;&nbsp;</span><select class="currency" name="t">
+<option value="JPY" selected>日本　円</option><option value="USD">アメリカ ドル</option><option value="EUR">欧州　ユーロ</option><option value="BRL">ブラジル　レアル</option><option value="AUD">オーストラリア　ドル</option><option value="CNY">中国　元</option><option value="GBP">イギリス　ポンド</option><option value="KRW">韓国　ウォン</option><option value="NZD">ニュージーランド　ドル</option><option value="SGD">シンガポール　ドル</option><option value="THB">タイ　バーツ</option><option value="TWD">台湾　ドル</option><option value="ZAR">南アフリカ　ランド</option><option value="CAD">カナダ　ドル</option><option value="TRY">トルコ　リラ</option><option value="HKD">香港　ドル</option><option value="CHF">スイス　フラン</option><option value="MYR">マレーシア　リンギット</option><option value="MXN">メキシコ　ペソ</option><option value="PHP">フィリピン　ペソ</option><option value="INR">インド　ルピー</option><option value="IDR">インドネシア　ルピア</option><option value="RUB">ロシア　ルーブル</option><option value="SEK">スウェーデン　クローナ</option><option value="NOK">ノルウェー　クローネ</option><option value="DKK">デンマーク　クローネ</option><option value="AED">UAE　ディルハム</option><option value="CLP">チリ　ペソ</option><option value="VEF">ベネズエラ　ボリバル・フエルテ</option><option value="KWD">クウェート　ディナール</option><option value="SAR">サウジアラビア　リヤル</option><option value="RON">ルーマニア　レウ</option><option value="PYG">パラグアイ　グァラニ</option><option value="EGP">エジプト　ポンド</option><option value="COP">コロンビア　ペソ</option><option value="JOD">ヨルダン　ディナール</option><option value="ECS">エクアドル　スクレ</option><option value="PEN">ペルー　ソル</option><option value="LBP">レバノン　ポンド</option></select><span>&nbsp;に&nbsp;</span><input id="exSearchButton" type="submit" value="&nbsp;">
+
+</form>
+
+</div>
+<!-- /為替レート計算 -->
+
+<hr id="hrFinanceSearch">
+<div id="cat-pass">
+<!--delimita-->
+</div><!--/#cat-pass end-->
+</div><!--/#contents-header end-->
+
+<div id="contents-body">
+<span class="yj-guid"><a name="contents-start" id="contents-start"></a><img src="http://i.yimg.jp/images/clear.gif" alt="ここから本文です" width="1" height="1"></span>
+<!--main start-->
+
+<!-- CT -->
+<!-- SpaceID=0 robot -->
+<!-- /CT -->
+
+<!--#main start-->
+<div id="main">
+
+<noscript>
+<div class="alertBg yjSt marB10">
+<strong class="darkRed">現在 JavaScriptが無効 になっています。</strong>
+<p>Yahoo!ファイナンスのすべての機能を利用するためには、JavaScriptの設定を有効にしてください。<br>
+JavaScriptの設定を変更する方法は<a href="http://help.yahoo.co.jp/help/jp/common/sys/sys-07.html">こちら</a>。</p>
+</div>
+</noscript>
+
+<!-- sokuhou -->
+<div class="NewsImportant clearFix">
+<span class="sokuhou">お知らせ</span>
+<a href="http://rdsig.yahoo.co.jp/jpr_finance/sokuhou/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9yYW5raW5nL2N1cnJlbmN5Lz9rZD0xJnRtPWQ-"><strong>為替の変動状況をランキング化 「為替ランキング」新登場</strong></a><span class="ymuiNew" title="[new]">&nbsp;</span>
+</div>
+<!-- /sokuhou -->
+
+<!-- fxHeaderTtl -->
+<div class="fxHeaderTtl">
+    <h1 class="mainTtl">FXチャート・レート</h1>
+    <a class="cafx" href="http://rdsig.yahoo.co.jp/finance/fx/cafx/logo/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3IuY2EtbXByLmpwL3MvMTA0Lz9pNGE9NTE3MjIw/RS=^ADARPs1qz57vuwhuR8mzvizX7nYvoc-" title="YJFX!"></a>
+</div>
+
+<!-- .fxExRateChart -->
+<div class="fxExRateChart">
+<div class="fxERCMenu"> 
+<ul class="term" id="tab_all">
+    <li id="one"><span>1分足</span></li>
+    <li id="five" class="current">5分足</li>
+    <li id="fifteen"><span>15分足</span></li>
+    <li id="thirty"><span>30分足</span></li>
+    <li id="hour"><span>1時間足</span></li>
+    <li id="day"><span>日足</span></li>
+    <li id="week"><span>週足</span></li>
+    <li id="month"><span>月足</span></li>
+</ul>
+</div>
+    <table class="fxERCTbl"><tr><td id="USDJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoUsdJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNESlBZPUZY">米ドル/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="USDJPY_chart_bid">103.856</span></li>
+<li class="ask"><span class="small">Ask</span><span id="USDJPY_chart_ask">103.86</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNESlBZPUZY"><img src="" id="USDJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="EURJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoEurJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSSlBZPUZY">ユーロ/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="EURJPY_chart_bid">137.75</span></li>
+<li class="ask"><span class="small">Ask</span><span id="EURJPY_chart_ask">137.76</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSSlBZPUZY"><img src="" id="EURJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="AUDJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoAudJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVESlBZPUZY">豪ドル/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="AUDJPY_chart_bid">96.364</span></li>
+<li class="ask"><span class="small">Ask</span><span id="AUDJPY_chart_ask">96.373</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVESlBZPUZY"><img src="" id="AUDJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td class="end" id="GBPJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoGbpJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQSlBZPUZY">英ポンド/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="GBPJPY_chart_bid">172.192</span></li>
+<li class="ask"><span class="small">Ask</span><span id="GBPJPY_chart_ask">172.21</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQSlBZPUZY"><img src="" id="GBPJPY" width="153px" height="83"/></a></li>
+</ul>
+</td></tr><tr><td id="NZDJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoNzdJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/nzdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9TlpESlBZPUZY">NZドル/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="NZDJPY_chart_bid">87.009</span></li>
+<li class="ask"><span class="small">Ask</span><span id="NZDJPY_chart_ask">87.027</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/nzdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9TlpESlBZPUZY"><img src="" id="NZDJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="CADJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoCadJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cadjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0FESlBZPUZY">カナダドル/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="CADJPY_chart_bid">94.603</span></li>
+<li class="ask"><span class="small">Ask</span><span id="CADJPY_chart_ask">94.627</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cadjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0FESlBZPUZY"><img src="" id="CADJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="CHFJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoChfJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/chfjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0hGSlBZPUZY">スイスフラン/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="CHFJPY_chart_bid">113.744</span></li>
+<li class="ask"><span class="small">Ask</span><span id="CHFJPY_chart_ask">113.768</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/chfjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0hGSlBZPUZY"><img src="" id="CHFJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td class="end" id="ZARJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoZarJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/zarjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9WkFSSlBZPUZY">ランド/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="ZARJPY_chart_bid">9.683</span></li>
+<li class="ask"><span class="small">Ask</span><span id="ZARJPY_chart_ask">9.702</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/zarjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9WkFSSlBZPUZY"><img src="" id="ZARJPY" width="153px" height="83"/></a></li>
+</ul>
+</td></tr><tr><td id="CNHJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoCnhJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cnhjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q05ISlBZPUZY">人民元/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="CNHJPY_chart_bid">16.849</span></li>
+<li class="ask"><span class="small">Ask</span><span id="CNHJPY_chart_ask">16.879</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cnhjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q05ISlBZPUZY"><img src="" id="CNHJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="EURUSD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoEurUsd18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSVVNEPUZY">ユーロ/ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="EURUSD_chart_bid">1.32631</span></li>
+<li class="ask"><span class="small">Ask</span><span id="EURUSD_chart_ask">1.32639</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSVVNEPUZY"><img src="" id="EURUSD" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="GBPUSD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoGbpUsd18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQVVNEPUZY">英ポンド/ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="GBPUSD_chart_bid">1.65794</span></li>
+<li class="ask"><span class="small">Ask</span><span id="GBPUSD_chart_ask">1.65819</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQVVNEPUZY"><img src="" id="GBPUSD" width="153px" height="83"/></a></li>
+</ul>
+</td><td class="end" id="AUDUSD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoAudUsd18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVEVVNEPUZY">豪ドル/ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="AUDUSD_chart_bid">0.92782</span></li>
+<li class="ask"><span class="small">Ask</span><span id="AUDUSD_chart_ask">0.928</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVEVVNEPUZY"><img src="" id="AUDUSD" width="153px" height="83"/></a></li>
+</ul>
+</td></tr><tr><td id="NZDUSD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoNzdUsd18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/nzdusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9TlpEVVNEPUZY">NZドル/ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="NZDUSD_chart_bid">0.83776</span></li>
+<li class="ask"><span class="small">Ask</span><span id="NZDUSD_chart_ask">0.83806</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/nzdusd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9TlpEVVNEPUZY"><img src="" id="NZDUSD" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="HKDJPY_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoHkdJpy18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/hkdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9SEtESlBZPUZY">香港ドル/円</a></li>
+<li class="bid"><span class="small">Bid</span><span id="HKDJPY_chart_bid">13.386</span></li>
+<li class="ask"><span class="small">Ask</span><span id="HKDJPY_chart_ask">13.416</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/hkdjpy/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9SEtESlBZPUZY"><img src="" id="HKDJPY" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="EURGBP_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoEurGbp18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurgbp/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSR0JQPUZY">ユーロ/英ポンド</a></li>
+<li class="bid"><span class="small">Bid</span><span id="EURGBP_chart_bid">0.79988</span></li>
+<li class="ask"><span class="small">Ask</span><span id="EURGBP_chart_ask">0.80006</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurgbp/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSR0JQPUZY"><img src="" id="EURGBP" width="153px" height="83"/></a></li>
+</ul>
+</td><td class="end" id="EURAUD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoEurAud18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/euraud/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSQVVEPUZY">ユーロ/豪ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="EURAUD_chart_bid">1.42934</span></li>
+<li class="ask"><span class="small">Ask</span><span id="EURAUD_chart_ask">1.42957</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/euraud/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSQVVEPUZY"><img src="" id="EURAUD" width="153px" height="83"/></a></li>
+</ul>
+</td></tr><tr><td id="USDCHF_chart_td"><ul class="inner">
+<li class="currency long flagWicon18 icoUsdChf18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNEQ0hGPUZY">米ドル/スイスフラン</a></li>
+<li class="bid"><span class="small">Bid</span><span id="USDCHF_chart_bid">0.91289</span></li>
+<li class="ask"><span class="small">Ask</span><span id="USDCHF_chart_ask">0.91307</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNEQ0hGPUZY"><img src="" id="USDCHF" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="EURCHF_chart_td"><ul class="inner">
+<li class="currency long flagWicon18 icoEurChf18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSQ0hGPUZY">ユーロ/スイスフラン</a></li>
+<li class="bid"><span class="small">Bid</span><span id="EURCHF_chart_bid">1.21088</span></li>
+<li class="ask"><span class="small">Ask</span><span id="EURCHF_chart_ask">1.21106</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/eurchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9RVVSQ0hGPUZY"><img src="" id="EURCHF" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="GBPCHF_chart_td"><ul class="inner">
+<li class="currency long flagWicon18 icoGbpChf18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQQ0hGPUZY">英ポンド/スイスフラン</a></li>
+<li class="bid"><span class="small">Bid</span><span id="GBPCHF_chart_bid">1.51363</span></li>
+<li class="ask"><span class="small">Ask</span><span id="GBPCHF_chart_ask">1.51393</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/gbpchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9R0JQQ0hGPUZY"><img src="" id="GBPCHF" width="153px" height="83"/></a></li>
+</ul>
+</td><td class="end" id="AUDCHF_chart_td"><ul class="inner">
+<li class="currency long flagWicon18 icoAudChf18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVEQ0hGPUZY">豪ドル/スイスフラン</a></li>
+<li class="bid"><span class="small">Bid</span><span id="AUDCHF_chart_bid">0.84702</span></li>
+<li class="ask"><span class="small">Ask</span><span id="AUDCHF_chart_ask">0.84732</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/audchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9QVVEQ0hGPUZY"><img src="" id="AUDCHF" width="153px" height="83"/></a></li>
+</ul>
+</td></tr><tr><td id="CADCHF_chart_td"><ul class="inner">
+<li class="currency long flagWicon18 icoCadChf18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cadchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0FEQ0hGPUZY">カナダドル/スイスフラン</a></li>
+<li class="bid"><span class="small">Bid</span><span id="CADCHF_chart_bid">0.83143</span></li>
+<li class="ask"><span class="small">Ask</span><span id="CADCHF_chart_ask">0.83203</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/cadchf/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9Q0FEQ0hGPUZY"><img src="" id="CADCHF" width="153px" height="83"/></a></li>
+</ul>
+</td><td id="USDHKD_chart_td"><ul class="inner">
+<li class="currency flagWicon18 icoUsdHkd18"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdhkd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNESEtEPUZY">米ドル/香港ドル</a></li>
+<li class="bid"><span class="small">Bid</span><span id="USDHKD_chart_bid">7.74991</span></li>
+<li class="ask"><span class="small">Ask</span><span id="USDHKD_chart_ask">7.75021</span></li>
+<li class="img"><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/usdhkd/RV=1/RU=aHR0cDovL2luZm8uZmluYW5jZS55YWhvby5jby5qcC9meC9kZXRhaWwvP2NvZGU9VVNESEtEPUZY"><img src="" id="USDHKD" width="153px" height="83"/></a></li>
+</ul>
+</td><td></td><td class="end"></td></tr></table>
+</div>
+<!-- /.fxExRateChart -->
+
+<p class="provInfo yjS">情報提供元：<a href="http://rdsig.yahoo.co.jp/finance/fx/cafx/logo/RV=1/RE=1409825499/RH=cmRzaWcueWFob28uY28uanA-/RB=/RU=aHR0cDovL3IuY2EtbXByLmpwL3MvMTA0Lz9pNGE9NTE3MjIw/RS=^ADARPs1qz57vuwhuR8mzvizX7nYvoc-">YJFX!</a></p>
+
+<!---SQB-->
+<!-- SpaceID=0 robot -->
+<!---/SQB-->
+
+<div id="yads_ds49584_14540_01"></div>
+
+<div class="ymuiContainer ymuiBodyBG yjSt">
+<p class="darkRed"><strong>【ご注意】</strong></p>
+<ul class="ymuiList yjSt">
+<li>※各情報の内容につきましては、正確であるように努めておりますが、その内容を保証するものではありません。</li>
+<li>※Yahoo! JAPANは、これらの情報によって生じたいかなる損害につきましても、責任を負うものではありません。</li>
+<li>また、為替レート、為替チャートはFX会社各社によって数値に差異があり、Yahoo!ファイナンス上で表示している為替レート、為替チャートと異なる場合があります。</li>
+</ul>
+</div>
+
+</div>
+<!--/main end-->
+
+<!--sub start-->
+<div id="sub">
+
+<!---LREC-->
+<!-- SpaceID=0 robot -->
+<!---/LREC-->
+
+<!-- fxNews -->
+<div class="fxRightNews">
+<h2 class="ttl">FXニュース</h2>
+    <ul class="idctDtl">    <li><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/news/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC9kZXRhaWwvMjAxNDA4MjEtMDAwMDAwNzctZHpoLWZ4">
+    <dl>
+    <dt>19時05分</dt>
+    <dd><span class="link">ドル円イメトレ＝米指標多数、一時的な104円台復帰あり得るか</span><span class="gray">(トレーダーズ・ウェブ)</span></dd>
+    </dl></a>
+    </li>    <li><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/news/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC9kZXRhaWwvMjAxNDA4MjEtMDAwMDkwNzAtY3RmeC1meA--">
+    <dl>
+    <dt>18時42分</dt>
+    <dd><span class="link">【ディーラー発】ユーロ買い先行（欧州午前）</span><span class="gray">(セントラル短資ＦＸ)</span></dd>
+    </dl></a>
+    </li>    <li><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/news/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC9kZXRhaWwvMjAxNDA4MjEtMDAwMDAwNzYtZHpoLWZ4">
+    <dl>
+    <dt>18時06分</dt>
+    <dd><span class="link">円債サマリー（21日）＝3日続落　米債安・株高で売り優勢</span><span class="gray">(トレーダーズ・ウェブ)</span></dd>
+    </dl></a>
+    </li>    <li><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/news/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC9kZXRhaWwvMjAxNDA4MjEtMDAwMDAwNzUtZHpoLWZ4">
+    <dl>
+    <dt>17時47分</dt>
+    <dd><span class="link">識者の見方＝英国：利上げ派始動　来年2月の利上げ開始を予想</span><span class="gray">(トレーダーズ・ウェブ)</span></dd>
+    </dl></a>
+    </li>    <li><a href="http://rdsig.yahoo.co.jp/finance/fx/chart/news/RV=1/RU=aHR0cDovL25ld3MuZmluYW5jZS55YWhvby5jby5qcC9kZXRhaWwvMjAxNDA4MjEtMDAwMDkwNjctY3RmeC1meA--">
+    <dl>
+    <dt>17時32分</dt>
+    <dd><span class="link">英・7月小売売上高指数など</span><span class="gray">(セントラル短資ＦＸ)</span></dd>
+    </dl></a>
+    </li>    </ul>
+    <p class="link"><a href="http://news.finance.yahoo.co.jp/category/fx/">もっと見る</a></p>
+</div>
+<!-- /fxNews -->
+<!-- .fxRecommend -->
+<div class="fxRecommend">
+<h3 class="ttl"><span>おすすめコンテンツ</span></h3>
+<ul><li>
+<a href="http://r.ca-mpr.jp/s/104/?i4a=517223" onmousedown="this.href='http://r.ca-mpr.jp/s/104/?i4a=517223'"><dl><dt>豪ドル/円がさらにお得に！</dt>
+<dd class="image"><img src="http://i.yimg.jp/images/finance/cafx/cafx_201304_60_60_02.gif" width="50" height="50" alt="YJFX!豪ドル/円標準スプレッド0.9銭"></dd>
+<dd class="text">豪ドル/円の標準スプレッドが0.9銭に！（例外有り）FX取引ならヤフーグループのYJFX!へ</dd></dl></a>
+</li><li>
+<a href="http://r.ca-mpr.jp/s/104/?i4a=737136" onmousedown="this.href='http://r.ca-mpr.jp/s/104/?i4a=737136'"><dl><dt>FXデモトレードはこちら</dt>
+<dd class="image"><img src="http://i.yimg.jp/images/finance/cafx/demotre60x60.jpg" width="50" height="50" alt="FXデモトレード"></dd>
+<dd class="text">FXを始めてみたいけど、ちょっと不安というあなた！まずはYJFX!のデモ口座でFXを始めよう！</dd></dl></a>
+</li><li>
+<a href="http://r.ca-mpr.jp/s/104/?i4a=556671" onmousedown="this.href='http://r.ca-mpr.jp/s/104/?i4a=556671'"><dl><dt>バイナリーオプションもYJFX!</dt>
+<dd class="image"><img src="http://i.yimg.jp/images/finance/rcm/fx_optr.gif" width="50" height="50" alt="バイナリーオプションならYJFX!"></dd>
+<dd class="text">ヤフーグループのYJFX!で今話題のバイナリーオプションを始めよう！</dd></dl></a>
+</li><li>
+<a href="http://fx.finance.yahoo.zaitsu-labs.com/" onmousedown="this.href='http://fx.finance.yahoo.zaitsu-labs.com/'"><dl><dt>FX会社比較</dt>
+<dd class="image"><img src="http://i.yimg.jp/images/finance/rcm/60x60_fx02.png" width="50" height="50" alt="FX会社比較"></dd>
+<dd class="text">キャンペーンやスワップポイントなどで大手FX会社を簡単比較</dd></dl></a>
+</li><li>
+<a href="http://info.finance.yahoo.co.jp/store/item/fx_strategy/" onmousedown="this.href='http://info.finance.yahoo.co.jp/store/item/fx_strategy/'"><dl><dt>FXストラテジー</dt>
+<dd class="image"><img src="http://i.yimg.jp/images/finance/rcm/fxstr.png" width="50" height="50" alt="FXストラテジー"></dd>
+<dd class="text">朝・夕に配信される、チャンスを逃さないためのWebマガジン</dd></dl></a>
+</li></ul>
+</div>
+<!-- /fxRecommend -->
+<div class="marB10">
+<div id="yads_ds88396_13769"></div>
+<script type="text/javascript" language="JavaScript">
+<!--
+yads_ad_ds = '88396_13769';
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+</div>
+
+<div id="yads_ds49584_14540_02"></div>
+
+</div><!--/#sub end-->
+<!--/sub end-->
+
+<script type="text/javascript">
+<!--
+$(function(){
+    var list = ['#one', '#five', '#fifteen', '#thirty', '#hour', '#day', '#week', '#month'];
+    var candle = ['1分足', '5分足', '15分足', '30分足', '1時間足', '日足', '週足', '月足'];
+    var img = ['USDJPY', 'EURJPY', 'AUDJPY', 'GBPJPY', 'NZDJPY', 'CADJPY', 'CHFJPY', 'ZARJPY', 'CNHJPY', 'EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'HKDJPY', 'EURGBP', 'EURAUD', 'USDCHF', 'EURCHF', 'GBPCHF', 'AUDCHF', 'CADCHF', 'USDHKD'];
+    var rd = ['chart/1min/*', 'chart/5min/*', 'chart/15min/*', 'chart/30min/*', 'chart/1hour/*', 'chart/1day/*', 'chart/1week/*', 'chart/1month/*'];
+
+    function changeImg(num, rd_url, max){
+        var time = parseInt((new Date)/1000);
+        var remainder = time % 50;
+        if(remainder < 50){
+            var param = time - remainder + 50;
+        }
+        else {
+            var param = time - remainder + 100;
+        }
+
+        var j;
+        num = num + 1;
+        for(j=0;j<max;j++){
+            if(j == max-1 && rd_url) {
+                $('#' + img[j]).attr('src',rd_url+'http://cabelo.c.yimg.jp/finance/fx/chart/s/' + num + '_' + img[j] + '.png?t=' + param);
+            }
+            else {
+                $('#' + img[j]).attr('src','http://cabelo.c.yimg.jp/finance/fx/chart/s/' + num + '_' + img[j] + '.png?t=' + param);
+            }
+        }
+    }
+
+    function changeHtml(num){
+        var i;
+        for(i=0;i<8;i++){
+            if(i == num){
+                $(list[i]).addClass('current');
+                $(list[i]).html(candle[i]);
+            }
+            else {
+                $(list[i]).removeClass('current');
+                $(list[i]).html('<span style="color:#0000de; cursor: pointer;padding: 0px 10px">' + candle[i] +'</span>');
+            }
+        }
+    }
+
+    $('#tab li').click(function() {
+        var num = $('#tab li').index(this);
+//        var rd_url = 'http://rd.yahoo.co.jp/finance/fx/ratechart/top/' + rd[num];
+        var rd_url = '';
+        changeHtml(num);
+        changeImg(num, rd_url, 12);
+
+    });
+
+    $('#tab_all li').click(function() {
+        var num = $('#tab_all li').index(this);
+//        var rd_url = 'http://rd.yahoo.co.jp/finance/fx/ratechart/' + rd[num];
+        var rd_url = '';
+        changeHtml(num);
+        changeImg(num, rd_url, 22);
+    });
+
+    (function init(){
+        var rd_url = '';
+        changeImg(1, rd_url, 22);
+    })();
+
+});
+-->
+</script>
+
+</div><!--/#contents-body end-->
+
+<div id="contents-footer">
+<span class="yj-guid"><img src="http://i.yimg.jp/images/clear.gif" width="1" height="1" alt="本文はここまでです"></span>
+<span class="yj-skip">
+<a href="#pagetop"><img src="http://i.yimg.jp/images/clear.gif" alt="このページの先頭へ" width="1" height="1"></a></span>
+</div><!--/#contents-footer end-->
+</div><!--/#contents end-->
+<!--/contents end-->
+
+<hr class="separation">
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+<!--footer start-->
+<div id="footer">
+<address>
+<a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - <a href="http://help.yahoo.co.jp/help/jp/finance/finance-27.html">免責事項（必ずお読みください）</a> - <a href="http://help.yahoo.co.jp/help/jp/finance/">ヘルプ・お問い合わせ</a> - <a href="http://rdsig.yahoo.co.jp/media/finance/footer/feedback/RV=1/RU=aHR0cDovL21zLnlhaG9vLmNvLmpwL2Jpbi95YWR2LWluZm8vZmVlZGJhY2sv">ご意見・ご要望</a><br>Copyright (C) 2014 YJFX, inc All Rights Reserved.<br>Copyright (C) 2014 Yahoo Japan Corporation. All Rights Reserved.</address>
+
+</div><!--/#footer end-->
+<!--/footer end-->
+</div><!--/#wrapper end-->
+<!--/wrapper end-->
+
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=aSf293Q";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=aSf293Q" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+</body>
+<script>
+(function(){YjdCookie={set:function(a,b){var x=new XMLHttpRequest();x.open("GET",a,0);x.send();document.location.href=b;}};})();
+</script>
+<script>
+$(function(){$('a[href=#]').click(function(e){e.preventDefault();})});
+
+/*! vTicker 1.13
+ http://richhollis.github.com/vticker/ | http://richhollis.github.com/vticker/license/ | based on Jubgits vTicker http://www.jugbit.com/jquery-vticker-vertical-news-ticker/ */
+(function(d){var m={speed:1000,pause:5000,showItems:1,mousePause:!0,height:24,animate:!0,margin:0,padding:2,startPaused:!1},c={moveUp:function(a,b){c.animate(a,b,"up")},moveDown:function(a,b){c.animate(a,b,"down")},animate:function(a,b,e){var c=a.itemHeight,f=a.options,g=a.element.children("ul"),k="up"===e?"li:first":"li:last",l=g.children(k).clone(!0);0<f.height&&(c=g.children("li:first").height());c+=f.margin+2*f.padding;"down"===e&&g.css("top","-"+c+"px").prepend(l);if(b&&b.animate){if(a.animating)return;a.animating=!0;g.animate("up"===e?{top:"-="+c+"px"}:{top:0},f.speed,function(){d(g).children(k).remove();d(g).css("top","0px");a.animating=!1})}else g.children(k).remove(),g.css("top","0px");"up"===e&&l.appendTo(g)},nextUsePause:function(){var a=d(this).data("state"),b=a.options;a.isPaused||2>a.itemCount||f.next.call(this,{animate:b.animate})},startInterval:function(){var a=d(this).data("state"),b=this;a.intervalId=setInterval(function(){c.nextUsePause.call(b)},a.options.pause)},stopInterval:function(){var a=d(this).data("state");a&&(a.intervalId&&clearInterval(a.intervalId),a.intervalId=void 0)},restartInterval:function(){c.stopInterval.call(this);c.startInterval.call(this)}},f={init:function(a){f.stop.call(this);var b=jQuery.extend({},m);a=d.extend(b,a);var b=d(this),e={itemCount:b.children("ul").children("li").length,itemHeight:0,itemMargin:0,element:b,animating:!1,options:a,isPaused:a.startPaused?!0:!1,pausedByCode:!1};d(this).data("state",e);b.css({overflow:"hidden",position:"relative"}).children("ul").css({position:"absolute",margin:0,padding:0}).children("li").css({margin:a.margin,padding:a.padding});isNaN(a.height)||0===a.height?(b.children("ul").children("li").each(function(){var a=d(this);a.height()>e.itemHeight&&(e.itemHeight=a.height())}),b.children("ul").children("li").each(function(){d(this).height(e.itemHeight)}),b.height((e.itemHeight+(a.margin+2*a.padding))*a.showItems+a.margin)):b.height(a.height);var h=this;a.startPaused||c.startInterval.call(h);a.mousePause&&b.bind("mouseenter",function(){!0!==e.isPaused&&(e.pausedByCode=!0,c.stopInterval.call(h),f.pause.call(h,!0))}).bind("mouseleave",function(){if(!0!==e.isPaused||e.pausedByCode)e.pausedByCode=!1,f.pause.call(h,!1),c.startInterval.call(h)})},pause:function(a){var b=d(this).data("state");if(b){if(2>b.itemCount)return!1;(b.isPaused=a)?d(this).addClass("paused"):d(this).removeClass("paused")}},next:function(a){var b=d(this).data("state");if(b){if(b.animating||2>b.itemCount)return!1;c.restartInterval.call(this);c.moveUp(b,a)}},prev:function(a){var b=d(this).data("state");if(b){if(b.animating||2>b.itemCount)return!1;c.restartInterval.call(this);c.moveDown(b,a)}},stop:function(){d(this).data("state")&&c.stopInterval.call(this)}};d.fn.vTicker=function(a){if(f[a])return f[a].apply(this,Array.prototype.slice.call(arguments,1));if("object"!==typeof a&&a)d.error("Method "+a+" does not exist on jQuery.vTicker");else return f.init.apply(this,arguments)}})(jQuery);
+
+$(function(){$('.fxTicker').vTicker();});
+</script>
+<script type="text/javascript" language="JavaScript">
+<!--
+yads_ad_ds = '49584_14540';
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" src="http://yads.yahoo.co.jp/js/yads.js"></script>
+</html>
